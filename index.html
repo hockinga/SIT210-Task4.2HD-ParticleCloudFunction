@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traffic Lights</title>
+</head>
+<body>
+    <div id=content class="centered">
+        <iframe name="blank-frame" id="blank-frame" hidden></iframe>
+        <form id="traffic-form"
+            action="https://api.particle.io/v1/devices/DEVICE_ID/FN_NAME?access_token=TOKEN_ID"
+            method="POST"
+            target="blank-frame">
+
+            <h2>Set traffic light colour</h2>
+
+            <div id="button-div">
+                <button class="traffic-button" name="traffic" type="submit" id="red-button" value="red">Red</button>
+                <button class="traffic-button" name="traffic" type="submit" id="orange-button" value="orange">Orange</button>
+                <button class="traffic-button" name="traffic" type="submit" id="green-button" value="green">Green</button>
+                <button class="traffic-button" name="traffic" type="submit" id="off-button" value="off">Off</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

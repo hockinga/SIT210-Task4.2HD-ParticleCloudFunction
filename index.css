@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
+:root {
+    --margin: 10px;
+    --font-small: 20px;
+    --font-large: 50px;
+    --font: "Raleway", "sans-serif";
+    --button-width: 100px;
+}
+
+html {
+    min-height: 100vh;
+    background: linear-gradient(lightgray, lightblue);
+}
+
+#content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: var(--font);
+    font-size: var(--font-large);
+    text-align: center;
+}
+
+#button-div {
+    display: flex;
+    width: 100%;
+}
+
+.traffic-button {
+    text-align: center;
+    font-family: var(--font);
+    font-size: var(--font-small);
+    padding: var(--margin);
+    margin: auto var(--margin);
+    border-radius:5px;
+    width: 100%;
+}
+
+#red-button {
+    color: white;
+    background-color: red;
+}
+
+#orange-button {
+    color: white;
+    background-color: orange;
+}
+
+#green-button {
+    color: white;
+    background-color: green;
+}
+
+#off-button {
+    color: white;
+    background-color: gray;
+}
